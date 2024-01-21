@@ -76,7 +76,7 @@ struct LoginView: View {
                     })
                     
                     NavigationLink {
-                        EmptyView()
+                        RegistrationView()
                     } label: {
                         HStack{
                             
