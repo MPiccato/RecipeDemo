@@ -8,23 +8,22 @@
 import SwiftUI
 
 struct RegistrationView: View {
-    @State private var email = ""
-    @State private var password = ""
-    
+    @StateObject var viewModel = RegistrationViewModel()
+   
     @Environment(\.dismiss) private var dismmiss
     var isPasswordValidLength: Bool {
-        return password.count >= 6
+        return viewModel.password.count >= 6
     }
     
     var isPasswordWithNumber: Bool {
-        return password.contains(where: { $0.isNumber})
+        return viewModel.password.contains(where: { $0.isNumber})
     }
     
     var isPasswordWithUpperCase: Bool {
-        return password.contains(where: {$0.isUppercase})
+        return viewModel.password.contains(where: {$0.isUppercase})
     }
     var isPasswordWithLowerCase: Bool {
-        return password.contains(where: {$0.isLowercase})
+        return viewModel.password.contains(where: {$0.isLowercase})
     }
     
     var isPasswordValid: Bool {
@@ -50,7 +49,7 @@ struct RegistrationView: View {
                 HStack {
                     Image(systemName: "envelope")
                         .fontWeight(.semibold)
-                    TextField("Email", text: $email)
+                    TextField("Email", text: $viewModel.email)
                         .font(.subheadline)
                         .padding(12)
                         .cornerRadius(12)
@@ -62,14 +61,14 @@ struct RegistrationView: View {
                         .fontWeight(.semibold)
                     
                     if isShowingPassword {
-                        TextField("Password", text: $password)
+                        TextField("Password", text: $viewModel.password)
                             .font(.subheadline)
                             .padding(12)
                             .cornerRadius(12)
                         
                     } else {
                         
-                        SecureField("Password", text: $password)
+                        SecureField("Password", text: $viewModel.password)
                             .font(.subheadline)
                             .padding(12)
                             .cornerRadius(12)
@@ -139,7 +138,11 @@ struct RegistrationView: View {
             
             // login Buttons
             VStack(spacing: 16) {
-                Button(action: {}, label: {
+                Button(action: {
+                    Task {
+                        try await viewModel.createUser()
+                    }
+                }, label: {
                     Text("Registrarse")
                         .modifier(RoundedColorButton(color: Color(.blue)))
                 })
