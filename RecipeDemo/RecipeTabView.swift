@@ -49,7 +49,7 @@ struct RecipeTabView: View {
                     selectedTab = 3
                 })
                 .tag(3)
-            Text("Inicio")
+            ProfileView()
                 .tabItem {
                     Image(systemName: selectedTab == 4 ? "person.fill"
                           : "person").environment(\.symbolVariants,
