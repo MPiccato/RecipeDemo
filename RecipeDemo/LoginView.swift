@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct LoginView: View {
-    @State private var email = ""
-    @State private var password = ""
+    @StateObject var viewModel = LoginViewModel()
+    @State private var isShowingPassword = false
     
     var body: some View {
         NavigationStack {
@@ -24,7 +24,7 @@ struct LoginView: View {
                     HStack {
                         Image(systemName: "envelope")
                             .fontWeight(.semibold)
-                        TextField("Email", text: $email)
+                        TextField("Email", text: $viewModel.email)
                             .font(.subheadline)
                             .padding(12)
                             .cornerRadius(12)
@@ -32,16 +32,23 @@ struct LoginView: View {
                     .modifier(TextViewModifier())
                     
                     HStack {
-                        Image(systemName: "envelope")
+                        Image(systemName: "lock")
                             .fontWeight(.semibold)
-                        SecureField("Password", text: $password)
-                            .font(.subheadline)
-                            .padding(12)
-                            .cornerRadius(12)
+                        
+                        if isShowingPassword {
+                            SecureField("Password", text: $viewModel.password)
+                                    .font(.subheadline)
+                                    .padding(12)
+                                    .cornerRadius(12)
+                        } else {
+                            TextField("Password", text: $viewModel.password).font(.subheadline).padding(12).cornerRadius(12)
+                        }
+                        
                         Button{
                             //mostrar password
+                            isShowingPassword.toggle()
                         } label: {
-                            Image(systemName: "eye")
+                            Image(systemName: isShowingPassword ? "eye" : "eye.slash")
                                 .foregroundColor(.gray)
                         }
                     }
@@ -63,7 +70,12 @@ struct LoginView: View {
                 
                 // login Buttons
                 VStack(spacing: 16) {
-                    Button(action: {}, label: {
+                    Button(action: {
+                        Task{
+                            try await viewModel.login()
+                        }
+                        
+                    }, label: {
                         Text("Ingresar")
                             .modifier(RoundedColorButton(color: Color(.blue)))
                     })
