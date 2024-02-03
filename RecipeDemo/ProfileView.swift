@@ -110,10 +110,7 @@ struct ProfileView: View {
                 // Content
                 LazyVGrid(columns: gridItemLayout) {
                     ForEach(0...10, id: \.self) { recipe in
-                        Rectangle()
-                            .frame(width: 150, height: 150)
-                            .foregroundColor(.gray)
-                            .background(Color(.systemGray2))
+                        RecipeCellView(recipe: MockData.recipes[1])
                     }
                 }
                 

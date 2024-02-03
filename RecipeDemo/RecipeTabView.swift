@@ -13,7 +13,7 @@ struct RecipeTabView: View {
     
     var body: some View {
         TabView(selection: $selectedTab){
-            Text("Inicio")
+            HomeView()
                 .tabItem {
                     Image(systemName: selectedTab == 0 ? "house.fill"
                           : "house").environment(\.symbolVariants,
