@@ -45,6 +45,8 @@
 		F36AF5012B5FD0860072A436 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = F36AF5002B5FD0860072A436 /* FirebaseStorage */; };
 		F36AF5032B5FD0860072A436 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = F36AF5022B5FD0860072A436 /* FirebaseStorageCombine-Community */; };
 		F36AF5052B5FD3D00072A436 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36AF5042B5FD3D00072A436 /* RegistrationViewModel.swift */; };
+		F36F333C2B701ECA001CA503 /* UploadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36F333B2B701ECA001CA503 /* UploadView.swift */; };
+		F36F333E2B70278A001CA503 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36F333D2B70278A001CA503 /* ImagePicker.swift */; };
 		F375FF032B5FDAF000FD5F28 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F375FF022B5FDAF000FD5F28 /* GoogleService-Info.plist */; };
 		F37884082B67A78800233506 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37884072B67A78800233506 /* LoginViewModel.swift */; };
 		F3A7E8C92B5D3D0400A0617E /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A7E8C82B5D3D0400A0617E /* RegistrationView.swift */; };
@@ -115,6 +117,8 @@
 		F3C41F3E2B6460C400B4C882 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = F3C41F3D2B6460C400B4C882 /* FirebaseStorage */; };
 		F3C41F402B6460C400B4C882 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = F3C41F3F2B6460C400B4C882 /* FirebaseStorageCombine-Community */; };
 		F3C9EBC52B64FF0700C7B265 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C9EBC42B64FF0700C7B265 /* ProfileView.swift */; };
+		F3D6EFF32B702F8E00890258 /* UploadView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D6EFF22B702F8E00890258 /* UploadView2.swift */; };
+		F3D6EFF52B70360D00890258 /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D6EFF42B70360D00890258 /* ModalView.swift */; };
 		F3E76D1B2B5BD970004CC07D /* RecipeDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E76D1A2B5BD970004CC07D /* RecipeDemoApp.swift */; };
 		F3E76D1D2B5BD970004CC07D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E76D1C2B5BD970004CC07D /* ContentView.swift */; };
 		F3E76D1F2B5BD972004CC07D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3E76D1E2B5BD972004CC07D /* Assets.xcassets */; };
@@ -131,12 +135,16 @@
 		F362FD6A2B6EC898001875A4 /* RecipeCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCellView.swift; sourceTree = "<group>"; };
 		F36AF4CC2B5FD00B0072A436 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		F36AF5042B5FD3D00072A436 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		F36F333B2B701ECA001CA503 /* UploadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadView.swift; sourceTree = "<group>"; };
+		F36F333D2B70278A001CA503 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		F375FF022B5FDAF000FD5F28 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F37884072B67A78800233506 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		F3A7E8C82B5D3D0400A0617E /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		F3C41EBC2B64566900B4C882 /* RecipeTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTabView.swift; sourceTree = "<group>"; };
 		F3C41EBF2B645D2800B4C882 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		F3C9EBC42B64FF0700C7B265 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		F3D6EFF22B702F8E00890258 /* UploadView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadView2.swift; sourceTree = "<group>"; };
+		F3D6EFF42B70360D00890258 /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
 		F3E76D172B5BD970004CC07D /* RecipeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecipeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3E76D1A2B5BD970004CC07D /* RecipeDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDemoApp.swift; sourceTree = "<group>"; };
 		F3E76D1C2B5BD970004CC07D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -316,6 +324,10 @@
 				F362FD662B6EC6EB001875A4 /* RecipeModel.swift */,
 				F362FD682B6EC763001875A4 /* MockData.swift */,
 				F362FD6A2B6EC898001875A4 /* RecipeCellView.swift */,
+				F36F333B2B701ECA001CA503 /* UploadView.swift */,
+				F36F333D2B70278A001CA503 /* ImagePicker.swift */,
+				F3D6EFF22B702F8E00890258 /* UploadView2.swift */,
+				F3D6EFF42B70360D00890258 /* ModalView.swift */,
 			);
 			path = RecipeDemo;
 			sourceTree = "<group>";
@@ -500,9 +512,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3D6EFF32B702F8E00890258 /* UploadView2.swift in Sources */,
 				F3E76D2D2B5BE469004CC07D /* TextViewModifier.swift in Sources */,
 				F3E76D1D2B5BD970004CC07D /* ContentView.swift in Sources */,
 				F362FD6B2B6EC898001875A4 /* RecipeCellView.swift in Sources */,
+				F36F333E2B70278A001CA503 /* ImagePicker.swift in Sources */,
 				F362FD652B6EC15C001875A4 /* HomeView.swift in Sources */,
 				F3E76D292B5BDCEA004CC07D /* RoundedColorButton.swift in Sources */,
 				F362FD692B6EC763001875A4 /* MockData.swift in Sources */,
@@ -512,8 +526,10 @@
 				F362FD672B6EC6EB001875A4 /* RecipeModel.swift in Sources */,
 				F3C41EBD2B64566900B4C882 /* RecipeTabView.swift in Sources */,
 				F36AF5052B5FD3D00072A436 /* RegistrationViewModel.swift in Sources */,
+				F3D6EFF52B70360D00890258 /* ModalView.swift in Sources */,
 				F37884082B67A78800233506 /* LoginViewModel.swift in Sources */,
 				F3E76D1B2B5BD970004CC07D /* RecipeDemoApp.swift in Sources */,
+				F36F333C2B701ECA001CA503 /* UploadView.swift in Sources */,
 				F3C9EBC52B64FF0700C7B265 /* ProfileView.swift in Sources */,
 				F36AF4CD2B5FD00B0072A436 /* AuthService.swift in Sources */,
 			);
@@ -652,6 +668,8 @@
 				DEVELOPMENT_TEAM = 23M7M35V73;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = " Necesitamos acceder a tu librería de fotos para poder subir las imagenes";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -681,6 +699,8 @@
 				DEVELOPMENT_TEAM = 23M7M35V73;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = " Necesitamos acceder a tu librería de fotos para poder subir las imagenes";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

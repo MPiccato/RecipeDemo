@@ -23,7 +23,7 @@ struct RecipeTabView: View {
                     selectedTab = 0
                 })
                 .tag(0)
-            Text("Subir")
+            UploadView(selectedTab: $selectedTab)
                 .tabItem {
                     Image(systemName: selectedTab == 0 ? "pencil.line"
                           : "pencil")
